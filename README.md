@@ -1,7 +1,7 @@
 # astro-microfrontends-server-islands
 
 This demo takes advantage of Server Islands to do server-side composition of microfrontends. Each microfrontend is an 
-Astro app that fetches data from an API and is server-sider rendered. The fetches are non-blockable to the content in the shell app.
+Astro app that fetches data from an API and is server-sider rendered.
 
 ## Features
 
