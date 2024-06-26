@@ -1,5 +1,6 @@
 ---
 import MicrofrontendA from "../components/MicrofrontendA.astro"
+import MicrofrontendB from "../components/MicrofrontendB.astro"
 import Fallback from "../components/Fallback.astro";
 ---
 
@@ -18,6 +19,9 @@ import Fallback from "../components/Fallback.astro";
 	<MicrofrontendA server:defer>
 		<div slot="fallback"><Fallback /></div>
 	</MicrofrontendA>
+	<MicrofrontendB server:defer>
+		<div slot="fallback"><Fallback /></div>
+	</MicrofrontendB>
 	<footer>Footer</footer>
 </body>
 </html>

@@ -12,6 +12,6 @@ export default defineConfig({
         }
     },
     server: {
-        port: 7100
+        port: 7200
     }
 });
