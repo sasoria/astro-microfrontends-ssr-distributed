@@ -1,0 +1,23 @@
+---
+import MicrofrontendA from "../components/MicrofrontendA.astro"
+import Fallback from "../components/Fallback.astro";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Astro description" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{"Shell"}</title>
+</head>
+<body>
+	<header>Header</header>
+	<MicrofrontendA server:defer>
+		<div slot="fallback"><Fallback /></div>
+	</MicrofrontendA>
+	<footer>Footer</footer>
+</body>
+</html>
