@@ -20,3 +20,6 @@ and fetches data from an external API.
 
 - Install dependencies with `npm run install`
 - Start the shell with `npm run dev`
+
+### Disclaimer
+This is running on a very early version of Astro that includes Server Islands.
