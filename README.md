@@ -13,10 +13,10 @@ and fetches data from an external API.
 
 ### Micro frontends
 
-- Install dependencies for each micro frontend with `npm install`
+- Install dependencies with `npm install`
 - Start each micro frontend with `npm run dev`
 
 ### Shell
 
-- Install dependencies for the shell with `npm run install`
+- Install dependencies with `npm run install`
 - Start the shell with `npm run dev`
