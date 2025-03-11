@@ -10,8 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
-    "astro": "^0.0.0-server-islands-20240621194657",
-    "typescript": "^5.5.2"
+    "@astrojs/check": "0.7.0",
+    "@astrojs/node": "^9.1.2",
+    "astro": "5.4.2",
+    "typescript": "5.5.2"
   }
 }
