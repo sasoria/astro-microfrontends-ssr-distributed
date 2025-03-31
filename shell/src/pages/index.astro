@@ -13,6 +13,14 @@ import Fallback from "../components/fallback/Fallback.astro";
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	<meta name="generator" content={Astro.generator} />
 	<title>{"Shell"}</title>
+	<script type="importmap">
+		{
+          "imports": {
+            "react": "https://esm.sh/react@19",
+            "react-dom": "https://esm.sh/react-dom@19"
+          }
+        }
+	</script>
 </head>
 <body>
 	<header>Header</header>

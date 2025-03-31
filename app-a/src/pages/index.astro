@@ -1,4 +1,5 @@
 ---
+import Component from "../components/Component";
 import style from "./_index.module.css"
 
 const res = await fetch("http://swapi.dev/api/people/1");
@@ -8,4 +9,5 @@ const data = await res.json();
 <section>
 	<h2 class={style.heading}>Microfrontend A</h2>
 	<p class={style.text}>Name: {data.name}</p>
+	<Component client:only="react" />
 </section>
