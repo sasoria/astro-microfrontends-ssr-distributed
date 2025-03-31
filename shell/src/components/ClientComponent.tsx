@@ -1,4 +1,4 @@
-const Component = () => {
+const ClientComponent = () => {
     return (
         <div>
             <p>Client-side component</p>
@@ -7,4 +7,4 @@ const Component = () => {
     );
 };
 
-export default Component;
+export default ClientComponent;
