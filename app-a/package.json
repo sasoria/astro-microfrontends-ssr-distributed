@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "app-a",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,6 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "cdn": "http-server -p 4000 ./dist/client --cors",
     "astro": "astro"
   },
   "dependencies": {
@@ -15,9 +16,12 @@
     "@astrojs/react": "^4.2.2",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
-    "astro": "5.4.2",
+    "astro": "5.5.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "typescript": "5.5.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
