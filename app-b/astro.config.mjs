@@ -13,9 +13,6 @@ export default defineConfig({
       }
     }
   },
-  build: {
-    assetsPrefix: "http://localhost:7200"
-  },
   server: {
     port: 7200
   },
