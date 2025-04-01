@@ -1,12 +1,12 @@
 # astro-microfrontends-server-islands
 
-This demo takes advantage of Server Islands to do server-side composition of microfrontends. Each microfrontend is server-sider rendered
-and fetches data from an external API.
+This demo takes advantage of Server Islands to do server-side composition of microfrontends. Each microfrontend is server-side rendered
+and fetches data from an external API. Client-side React components are supported in both the shell and in app-a.
 
 ## Features
 
 - ✨ Server-side rendering of microfrontends
-- 📦 Multiframeworks with Astro Server Islands (not tested)
+- 📦 Multiframeworks with Astro Server Islands
 - 🚀 SSG/SSR supported by Astro
 
 ## Usage
@@ -14,13 +14,11 @@ and fetches data from an external API.
 ### Microfrontends
 
 - Install dependencies with `npm install`
-- Start each micro frontend with `npm run dev`
+- Build each microfrontend with `npm run build`
+- Start each micro frontend with `npm run preview`
 
 ### Shell
 
 - Install dependencies with `npm run install`
-- Start the shell with `npm run dev`
-
-## Disclaimer
-This is running on a very experimental version of Astro that includes Server Islands. I recommend to wait for a stable release
-of Astro Islands.
+- Build the shell with `npm run build`
+- Start the shell with `npm run preview`
