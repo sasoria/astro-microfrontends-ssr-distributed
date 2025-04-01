@@ -22,3 +22,8 @@ and fetches data from an external API. Client-side React components are supporte
 - Install dependencies with `npm run install`
 - Build the shell with `npm run build`
 - Start the shell with `npm run preview`
+
+## Disclaimer
+
+In order to run the apps locally with npm run preview, the CDN that hosts the JavaScript assets are mocked for app-a. Make sure to run
+`npm run cdn` when you start that app. For production, I'd recommend to host the assets on a real CDN.
