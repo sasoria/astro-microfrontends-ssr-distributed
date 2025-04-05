@@ -8,7 +8,7 @@ and in app-a.
 
 - ✨ Server-side rendering of microfrontends with Astro
 - 📦 Server-side composition of microfrontends with Server Islands
-- 🚀 Excellent performance and next to no complexity
+- 🚀 Excellent performance and next to zero complexity
 
 ## Usage
 
