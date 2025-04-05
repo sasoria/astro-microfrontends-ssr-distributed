@@ -26,10 +26,10 @@ import ClientComponent from "../components/client/ClientComponent";
   <body>
     <header>Header</header>
     <MicrofrontendA server:defer>
-      <div slot="fallback"><Fallback /></div>
+      <Fallback slot="fallback"/>
     </MicrofrontendA>
     <MicrofrontendB server:defer>
-      <div slot="fallback"><Fallback /></div>
+      <Fallback slot="fallback" />
     </MicrofrontendB>
     <ClientComponent client:only="react" />
     <footer>Footer</footer>
