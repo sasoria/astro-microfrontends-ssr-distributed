@@ -24,7 +24,7 @@ and in app-a.
 
 ## Shared dependencies
 Dependencies for client-side rendered components such as react and react-dom are shared across applications. They are 
-fetched from esm.sh and are cached in the browser, reducing the bundle size. Each app can share other dependencies as well.
+fetched from esm.sh and cached in the browser, reducing the bundle size. Each app can share other dependencies as well.
 
 ## Disclaimer
 
