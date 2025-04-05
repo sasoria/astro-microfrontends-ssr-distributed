@@ -1,4 +1,4 @@
-# astro-microfrontends-server-islands
+# astro-microfrontends-ssr-distributed
 
 This demo takes advantage of Server Islands to do server-side composition of microfrontends. Each microfrontend is 
 server-side rendered and fetches data from an external API. Client-side React components are supported in both the shell 
