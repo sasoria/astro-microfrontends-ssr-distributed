@@ -1,6 +1,7 @@
 ---
 const microfrontend = await fetch("http://localhost:7200")
-  .catch((e) => console.error("Failed to fetch B"));
+  .then(res => res.text())
+  .catch((error) => console.error("Failed to fetch B"));
 ---
 
 <Fragment set:html={microfrontend} />

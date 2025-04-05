@@ -1,5 +1,6 @@
 ---
 const microfrontend = await fetch("http://localhost:7100")
+  .then(res => res.text())
   .catch((e) => console.error("Failed to fetch A"));
 ---
 
