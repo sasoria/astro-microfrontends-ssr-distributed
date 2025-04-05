@@ -1,37 +1,37 @@
 ---
-import MicrofrontendA from "../components/MicrofrontendA.astro"
-import MicrofrontendB from "../components/MicrofrontendB.astro"
+import MicrofrontendA from "../components/MicrofrontendA.astro";
+import MicrofrontendB from "../components/MicrofrontendB.astro";
 import Fallback from "../components/fallback/Fallback.astro";
 import ClientComponent from "../components/ClientComponent";
 ---
 
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="description" content="Astro description" />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="generator" content={Astro.generator} />
-	<title>{"Shell"}</title>
-	<script type="importmap">
-		{
-          "imports": {
-            "react": "https://esm.sh/react@19",
-            "react-dom": "https://esm.sh/react-dom@19",
-            "react-dom/client": "https://esm.sh/react-dom@19/client"
-          }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{"Shell"}</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@19",
+          "react-dom": "https://esm.sh/react-dom@19",
+          "react-dom/client": "https://esm.sh/react-dom@19/client"
         }
-	</script>
-</head>
-<body>
-	<header>Header</header>
-	<MicrofrontendA server:defer>
-		<div slot="fallback"><Fallback /></div>
-	</MicrofrontendA>
-	<MicrofrontendB server:defer>
-		<div slot="fallback"><Fallback /></div>
-	</MicrofrontendB>
-	<ClientComponent client:only="react" />
-	<footer>Footer</footer>
-</body>
+      }
+    </script>
+  </head>
+  <body>
+    <header>Header</header>
+    <MicrofrontendA server:defer>
+      <div slot="fallback"><Fallback /></div>
+    </MicrofrontendA>
+    <MicrofrontendB server:defer>
+      <div slot="fallback"><Fallback /></div>
+    </MicrofrontendB>
+    <ClientComponent client:only="react" />
+    <footer>Footer</footer>
+  </body>
 </html>

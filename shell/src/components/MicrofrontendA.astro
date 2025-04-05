@@ -1,5 +1,9 @@
 ---
+
 ---
 
-<Fragment set:html={fetch("http://localhost:7100").catch((e) => console.error("Failed to fetch A"))} />
-
+<Fragment
+  set:html={fetch("http://localhost:7100").catch((e) =>
+    console.error("Failed to fetch A"),
+  )}
+/>

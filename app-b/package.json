@@ -7,6 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "prettier": "npx prettier . --write",
     "astro": "astro"
   },
   "dependencies": {
@@ -14,5 +15,14 @@
     "@astrojs/node": "9.1.2",
     "astro": "5.4.2",
     "typescript": "5.5.2"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-astro"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

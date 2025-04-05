@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import node from "@astrojs/node";
 import react from "@astrojs/react";
 
@@ -8,29 +8,37 @@ export default defineConfig({
     build: {
       rollupOptions: {
         build: {
-          format: "file"
-        }
-      }
-    }
+          format: "file",
+        },
+      },
+    },
   },
   build: {
-    assetsPrefix: "http://localhost:4000"
+    assetsPrefix: "http://localhost:4000",
   },
   server: {
     port: 7100,
   },
   output: "server",
   adapter: node({
-    mode: "standalone"
+    mode: "standalone",
   }),
-  integrations: [{
-    name: 'importmap-externals',
-    hooks: {
-      'astro:build:setup': ({ vite, target }) => {
-        if(target === 'client') {
-          vite.build.rollupOptions["external"] = ["react", "react-dom", "scheduler", "react-dom/client"];
-        }
-      }
-    }
-  }, react()]
+  integrations: [
+    {
+      name: "importmap-externals",
+      hooks: {
+        "astro:build:setup": ({ vite, target }) => {
+          if (target === "client") {
+            vite.build.rollupOptions["external"] = [
+              "react",
+              "react-dom",
+              "scheduler",
+              "react-dom/client",
+            ];
+          }
+        },
+      },
+    },
+    react(),
+  ],
 });

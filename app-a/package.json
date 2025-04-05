@@ -7,6 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "prettier": "npx prettier . --write",
     "cdn": "http-server -p 4000 ./dist/client --cors",
     "astro": "astro"
   },
@@ -22,6 +23,13 @@
     "typescript": "5.5.2"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-astro"
+    ]
   }
 }

@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 import node from "@astrojs/node";
 
@@ -8,16 +8,16 @@ export default defineConfig({
     build: {
       rollupOptions: {
         build: {
-          format: "file"
-        }
-      }
-    }
+          format: "file",
+        },
+      },
+    },
   },
   server: {
-    port: 7200
+    port: 7200,
   },
   output: "server",
   adapter: node({
-    mode: "standalone"
-  })
+    mode: "standalone",
+  }),
 });
