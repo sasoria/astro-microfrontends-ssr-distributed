@@ -1,9 +1,6 @@
 ---
-
+const microfrontend = await fetch("http://localhost:7200")
+  .catch((e) => console.error("Failed to fetch B"));
 ---
 
-<Fragment
-  set:html={fetch("http://localhost:7200").catch((e) =>
-    console.error("Failed to fetch B"),
-  )}
-/>
+<Fragment set:html={microfrontend} />
