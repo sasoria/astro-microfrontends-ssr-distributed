@@ -4,15 +4,6 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    build: {
-      rollupOptions: {
-        build: {
-          format: "file",
-        },
-      },
-    },
-  },
   build: {
     assetsPrefix: "http://localhost:4000",
   },
