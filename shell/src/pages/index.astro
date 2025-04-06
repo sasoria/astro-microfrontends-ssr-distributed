@@ -1,7 +1,7 @@
 ---
 import MicrofrontendA from "../components/MicrofrontendA.astro";
 import MicrofrontendB from "../components/MicrofrontendB.astro";
-import Fallback from "../components/fallback/Fallback.astro";
+import Loader from "../components/loader/Loader.astro";
 import ClientComponent from "../components/client/ClientComponent";
 ---
 
@@ -26,10 +26,10 @@ import ClientComponent from "../components/client/ClientComponent";
   <body>
     <header>Header</header>
     <MicrofrontendA server:defer>
-      <Fallback slot="fallback"/>
+      <Loader slot="fallback"/>
     </MicrofrontendA>
     <MicrofrontendB server:defer>
-      <Fallback slot="fallback" />
+      <Loader slot="fallback" />
     </MicrofrontendB>
     <ClientComponent client:only="react" />
     <footer>Footer</footer>
