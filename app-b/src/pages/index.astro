@@ -5,7 +5,7 @@ const response = await fetch("https://sw.simplr.sh/api/people/2.json");
 const data = await response.json();
 ---
 
-<section>
-  <h2 class={style.heading}>Microfrontend B</h2>
-  <p class={style.text}>Name: {data.name}</p>
+<section class={style.container}>
+  <h2>Microfrontend B</h2>
+  <p>Name: {data.name}</p>
 </section>
