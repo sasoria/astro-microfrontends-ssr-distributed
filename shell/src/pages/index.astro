@@ -12,7 +12,7 @@ import ClientComponent from "../components/client/ClientComponent";
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{"Shell"}</title>
+    <title>Shell</title>
     <script type="importmap">
       {
         "imports": {
@@ -24,7 +24,7 @@ import ClientComponent from "../components/client/ClientComponent";
     </script>
   </head>
   <body>
-    <header>Header</header>
+    <h1>Shell</h1>
     <MicrofrontendA server:defer>
       <Loader slot="fallback"/>
     </MicrofrontendA>
@@ -32,6 +32,5 @@ import ClientComponent from "../components/client/ClientComponent";
       <Loader slot="fallback" />
     </MicrofrontendB>
     <ClientComponent client:only="react" />
-    <footer>Footer</footer>
   </body>
 </html>
