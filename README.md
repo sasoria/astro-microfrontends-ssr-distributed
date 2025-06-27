@@ -31,5 +31,6 @@ fetched from esm.sh and cached in the browser, reducing the bundle size. Each ap
 In order to run the apps locally with `npm run preview`, the CDN that hosts the assets for app-a is mocked. Make sure to run
 `npm run cdn` when you start that app. For production, I'd recommend to host the assets on a real CDN.
 
-<!-- Tentative resources: https://newsletter.astroweekly.dev/p/astro-weekly-78 -->
-<!-- Tentative resources: https://astro.build/blog/whats-new-april-2025 -->
+<!-- Astro Weekly https://newsletter.astroweekly.dev/p/astro-weekly-78 -->
+<!-- Astro's official blog: https://astro.build/blog/whats-new-april-2025 -->
+<!-- The Micro Frontend Newsletter: https://preview.mailerlite.io/preview/893059/emails/157938347457644464 -->
