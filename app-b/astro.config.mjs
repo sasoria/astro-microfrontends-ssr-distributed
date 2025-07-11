@@ -4,6 +4,9 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
+  build: {
+    inlineStylesheets: "always",
+  },
   server: {
     port: 7200,
   },

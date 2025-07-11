@@ -6,6 +6,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   build: {
     assetsPrefix: "http://localhost:4000",
+    inlineStylesheets: "always",
   },
   server: {
     port: 7100,
