@@ -22,6 +22,7 @@ export default defineConfig({
               "react-dom",
               "scheduler",
               "react-dom/client",
+              "react/jsx-runtime",
             ];
           }
         },
