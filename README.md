@@ -34,3 +34,6 @@ In order to run the apps locally with `npm run preview`, the CDN that hosts the 
 <!-- Astro Weekly https://newsletter.astroweekly.dev/p/astro-weekly-78 -->
 <!-- Astro's official blog: https://astro.build/blog/whats-new-april-2025 -->
 <!-- The Micro Frontend Newsletter: https://preview.mailerlite.io/preview/893059/emails/157938347457644464 -->
+
+## Questions and answers
+I have a dedicated section for common [questions and answers](/QUESTIONS.md).
